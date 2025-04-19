@@ -3,75 +3,61 @@
 </script>
 
 <template>
-  <div class="storeHeader">
-    <div class="burger">
-        <img src="/src/img/burger.svg" alt="">
+    <div class="store_header">
+        <div class="menu">
+            <span></span>
+            <span></span>
+        </div>
+        <h1>GRAPHICS CARD</h1>
+        <button class="cart"><h2>Shop now</h2></button>
     </div>
-    <div class="logoName">
-        <img src="/src/img/logo.png" alt="">
-        <h1>Store</h1>
-    </div>
-    <div class="listProducts">
-
-    </div>
-    
-    <ul>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#about-store">About store</a></li>
-        <li><a href="#prices">Prices</a></li>
-    </ul>
-  </div>
 </template>
 
 <style scoped>
-    .storeHeader {
-        padding: 10px 0 10px 0;
+    .store_header {
+        margin-top: 20px;
+        display: flex;
+        width: 100%;
+        height: 73px;
+        font-family: Sour_Gummy;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    h1 {
+        font-weight: 700;
+
+    }
+
+    .menu {
+        width: 103px;
+        height: 80%;;
+        border: 7px solid var(--blueCollor);
+        border-radius: var(--border18);
+        background-color: var(--yellowColor);
         display: flex;
         align-items: center;
-        background-color: rgb(0, 0, 0);
-        color: white;
+        justify-content: space-around;
+        flex-direction: column;
+        cursor: pointer;
     }
 
-    .burger {
-        width: 30px;
-        height: 30px;
+    .menu span {
+        display: block;
+        width: 50%;
+        height: 10px;
+        background-color: var(--blueCollor);
+        border-radius: var(--border18);
     }
 
-    .burger img {
-        width: 100%;
-        height: 100%;
-        background-size: contain;
+    .cart {
+        font-family: Sour_Gummy;
+        min-width: 103px;
+        height: 80%;
+        padding: 0 5px 0 5px;
+        background-color: var(--yellowColor);
+        border: 7px solid var(--blueCollor);
+        border-radius: var(--border18);
+        cursor: pointer;
     }
-
-    .logoName {
-        display: flex;
-        align-items: center
-    }
-
-    .logoName img {
-        width: 50px;
-        height: 50px;
-    }
-
-    .logoName h1 {
-        margin: 0px 0px 0px 5px;
-    }
-
-    .listProducts {
-        width: 140px;
-        height: 40px;
-        border-color: white;
-        border-radius: 10px;
-        border: 1px solid #ffffff;
-    }
-
-    ul {
-        display: flex;
-        align-items: center
-    }
-
-    li {
-        margin: 0 5px 0 5px;
-        list-style: none;
-    }
-</style>
+</style> 
